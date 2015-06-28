@@ -1,0 +1,1 @@
+this is 2D Game library implemented by OpenGL and OpenAL and OpenCV.
