@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\OpenCV.2.4.8\build\native\OpenCV.props" Condition="Exists('..\packages\OpenCV.2.4.8\build\native\OpenCV.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6A0E1F26-F7BE-4173-8F69-85B396C6C233}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>spacs</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\MoNoQLoREATOR\SkyDrive\sync\CppProjects\spacs;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Users\MoNoQLoREATOR\SkyDrive\sync\CppProjects\spacs;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\spacs\al.h" />
+    <ClInclude Include="..\..\spacs\alc.h" />
+    <ClInclude Include="..\..\spacs\alut.h" />
+    <ClInclude Include="..\..\spacs\coor2D_spacs.h" />
+    <ClInclude Include="..\..\spacs\glfw3.h" />
+    <ClInclude Include="..\..\spacs\image.h" />
+    <ClInclude Include="..\..\spacs\image_coor.h" />
+    <ClInclude Include="..\..\spacs\image_data.h" />
+    <ClInclude Include="..\..\spacs\image_drawer.h" />
+    <ClInclude Include="..\..\spacs\image_loader.h" />
+    <ClInclude Include="..\..\spacs\key.h" />
+    <ClInclude Include="..\..\spacs\manager.h" />
+    <ClInclude Include="..\..\spacs\matrix.h" />
+    <ClInclude Include="..\..\spacs\sound.h" />
+    <ClInclude Include="..\..\spacs\sound_data.h" />
+    <ClInclude Include="..\..\spacs\spacs.h" />
+    <ClInclude Include="..\..\spacs\TImageInfo.h" />
+    <ClInclude Include="..\..\spacs\top4_2D_spacs.h" />
+    <ClInclude Include="..\..\spacs\type_spacs.h" />
+    <ClInclude Include="..\..\spacs\util_spacs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\..\..\..\Program Files (x86)\OpenAL 1.1 SDK\libs\Win32\alut.lib" />
+    <Library Include="..\..\..\..\..\..\..\Program Files (x86)\OpenAL 1.1 SDK\libs\Win32\OpenAL32.lib" />
+    <Library Include="..\..\..\..\..\..\..\Program Files (x86)\OpenGL\glfw\lib\glfw3.lib" />
+    <Library Include="..\..\..\..\..\..\..\Program Files (x86)\OpenGL\glfw\lib\glfw3dll.lib" />
+    <Library Include="..\..\..\..\..\..\..\Program Files (x86)\OpenGL\lib\OPENGL32.LIB" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\spacs_cpp\GetBMPInfo_image_loader.cpp" />
+    <ClCompile Include="..\..\spacs_cpp\GetImageInfo_image_loader.cpp" />
+    <ClCompile Include="..\..\spacs_cpp\image.cpp" />
+    <ClCompile Include="..\..\spacs_cpp\image_coor.cpp" />
+    <ClCompile Include="..\..\spacs_cpp\image_data.cpp" />
+    <ClCompile Include="..\..\spacs_cpp\image_drawer.cpp" />
+    <ClCompile Include="..\..\spacs_cpp\image_loader.cpp" />
+    <ClCompile Include="..\..\spacs_cpp\key.cpp" />
+    <ClCompile Include="..\..\spacs_cpp\manager.cpp" />
+    <ClCompile Include="..\..\spacs_cpp\matrix.cpp" />
+    <ClCompile Include="..\..\spacs_cpp\sound.cpp" />
+    <ClCompile Include="..\..\spacs_cpp\sound_data.cpp" />
+    <ClCompile Include="..\..\spacs_cpp\top4_2D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\OpenCV.2.4.8\build\native\OpenCV.targets" Condition="Exists('..\packages\OpenCV.2.4.8\build\native\OpenCV.targets')" />
+  </ImportGroup>
+</Project>

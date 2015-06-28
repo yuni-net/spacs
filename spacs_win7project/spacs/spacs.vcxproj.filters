@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="system">
+      <UniqueIdentifier>{7b8736c1-e9f6-4988-b016-a98325022fc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenXL">
+      <UniqueIdentifier>{5ac6a111-797d-41d9-a2bd-9ae97fe4e75c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="manager">
+      <UniqueIdentifier>{7963fa51-6372-4b3f-9f8d-0cf959cb278d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="group_of_image">
+      <UniqueIdentifier>{3c8d1e85-2214-4066-8d0f-f0c865c2ffd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="group_of_image\image_data">
+      <UniqueIdentifier>{025b2a45-7a50-466b-9f8d-de8bba362055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="group_of_image\image_loader">
+      <UniqueIdentifier>{72463c2e-b265-41d0-a177-1fc0151352f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="group_of_image\image_drawer">
+      <UniqueIdentifier>{f2c2aad3-8e71-497b-84c7-2dd811fe571a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="group_of_image\image">
+      <UniqueIdentifier>{f62a0672-9099-4118-a8a1-af66cb44e98a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="top4_2D">
+      <UniqueIdentifier>{f6454015-da33-492c-8e85-a8f90a16f4a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="group_of_image\image_coor">
+      <UniqueIdentifier>{8d7ebfa6-500d-44be-88dc-d89061dca5b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sound">
+      <UniqueIdentifier>{c7624894-3ae5-458e-9ccb-450c1c2e0846}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="matrix">
+      <UniqueIdentifier>{ba617042-80c9-4f0e-bb4f-4a3210aaa764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sound_data">
+      <UniqueIdentifier>{26d4da40-9577-4936-8a2f-c4cd75b1f1b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="key">
+      <UniqueIdentifier>{4e4fe735-1659-49ea-8016-d01838fbf532}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\spacs\spacs.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\util_spacs.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\manager.h">
+      <Filter>manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\al.h">
+      <Filter>OpenXL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\alc.h">
+      <Filter>OpenXL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\glfw3.h">
+      <Filter>OpenXL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\alut.h">
+      <Filter>OpenXL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\image_data.h">
+      <Filter>group_of_image\image_data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\type_spacs.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\coor2D_spacs.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\image_loader.h">
+      <Filter>group_of_image\image_loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\image_drawer.h">
+      <Filter>group_of_image\image_drawer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\TImageInfo.h">
+      <Filter>group_of_image\image_loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\image.h">
+      <Filter>group_of_image\image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\top4_2D_spacs.h">
+      <Filter>top4_2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\image_coor.h">
+      <Filter>group_of_image\image_coor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\sound.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\matrix.h">
+      <Filter>matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\sound_data.h">
+      <Filter>sound_data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\key.h">
+      <Filter>key</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\..\..\..\Program Files (x86)\OpenAL 1.1 SDK\libs\Win32\alut.lib">
+      <Filter>リソース ファイル</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\..\Program Files (x86)\OpenGL\glfw\lib\glfw3.lib">
+      <Filter>リソース ファイル</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\..\Program Files (x86)\OpenGL\glfw\lib\glfw3dll.lib">
+      <Filter>リソース ファイル</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\..\Program Files (x86)\OpenAL 1.1 SDK\libs\Win32\OpenAL32.lib">
+      <Filter>リソース ファイル</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\..\Program Files (x86)\OpenGL\lib\OPENGL32.LIB">
+      <Filter>リソース ファイル</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\spacs_cpp\manager.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\image_data.cpp">
+      <Filter>group_of_image\image_data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\image_drawer.cpp">
+      <Filter>group_of_image\image_drawer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\GetBMPInfo_image_loader.cpp">
+      <Filter>group_of_image\image_loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\GetImageInfo_image_loader.cpp">
+      <Filter>group_of_image\image_loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\image_loader.cpp">
+      <Filter>group_of_image\image_loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\image.cpp">
+      <Filter>group_of_image\image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\top4_2D.cpp">
+      <Filter>top4_2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\image_coor.cpp">
+      <Filter>group_of_image\image_coor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\matrix.cpp">
+      <Filter>matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\sound_data.cpp">
+      <Filter>sound_data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\sound.cpp">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\key.cpp">
+      <Filter>key</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

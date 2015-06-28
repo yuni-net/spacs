@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="spacs">
+      <UniqueIdentifier>{9f5d96ca-4f99-42f4-b3ef-d001883ff2f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\GetBMPInfo_image_loader.cpp">
+      <Filter>spacs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\GetImageInfo_image_loader.cpp">
+      <Filter>spacs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\image.cpp">
+      <Filter>spacs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\image_coor.cpp">
+      <Filter>spacs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\image_data.cpp">
+      <Filter>spacs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\image_drawer.cpp">
+      <Filter>spacs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\image_loader.cpp">
+      <Filter>spacs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\key.cpp">
+      <Filter>spacs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\manager.cpp">
+      <Filter>spacs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\matrix.cpp">
+      <Filter>spacs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\sound.cpp">
+      <Filter>spacs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\sound_data.cpp">
+      <Filter>spacs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\spacs_cpp\top4_2D.cpp">
+      <Filter>spacs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\spacs\key.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\manager.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\matrix.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\sound.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\sound_data.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\spacs.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\TImageInfo.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\top4_2D_spacs.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\type_spacs.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\util_spacs.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\al.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\alc.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\alut.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\coor2D_spacs.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\glfw3.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\image.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\image_coor.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\image_data.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\image_drawer.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\spacs\image_loader.h">
+      <Filter>spacs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\spacs\OpenAL32.lib">
+      <Filter>spacs</Filter>
+    </Library>
+    <Library Include="..\..\spacs\OPENGL32.LIB">
+      <Filter>spacs</Filter>
+    </Library>
+    <Library Include="..\..\spacs\alut.lib">
+      <Filter>spacs</Filter>
+    </Library>
+    <Library Include="..\..\spacs\glfw3.lib">
+      <Filter>spacs</Filter>
+    </Library>
+    <Library Include="..\..\spacs\glfw3dll.lib">
+      <Filter>spacs</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
